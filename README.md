@@ -1,60 +1,15 @@
-# RS School REST service
-
-## Prerequisites
-
-- Git - [Download & Install Git](https://git-scm.com/downloads).
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
-
-## Downloading
-
-```
-git clone {repository URL}
-```
-
-## Installing NPM modules
-
-```
-npm install
-```
-
-## Running application
-
-```
-npm start
-```
-
-After starting the app on port (4000 as default) you can open
-in your browser OpenAPI documentation by typing http://localhost:4000/doc/.
-For more information about OpenAPI/Swagger please visit https://swagger.io/.
-
-## Testing
-
-After application running open new terminal and enter:
-
-To test without authorization
-
-```
-npm test
-```
-
-To test with authorization
-
-```
-npm run test:auth
-```
-
-## Development
-
-If you're using VSCode, you can get a better developer experience from integration with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions.
-
-### Auto-fix and format
-
-```
-npm run lint
-```
-
-### Debugging in VSCode
-
-Press <kbd>F5</kbd> to debug.
-
-For more information, visit: https://code.visualstudio.com/docs/editor/debugging
+First of all to start this app you nned to install Node js to ypur computer 
+After first step you need to open caesar-cipher-cli in your terminal and write:
+ node index.js -a encode -s {shift number} -i {input file path} -o {output file path}
+ 
+ there 4 options:
+ 1.  **-s, --shift**: a shift
+ 2.  **-i, --input**: an input file
+ 3.  **-o, --output**: an output file
+ 4.  **-a, --action**: an action encode/decode
+ 
+ shift and action are required options
+ 
+ application will use stdin and/or stdout streams if there is no input or output option in your command 
+ 
+To exit from app use Ctrl + C
